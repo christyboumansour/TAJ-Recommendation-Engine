@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # Load the dataset
-df = pd.read_csv('C:\\Users\\chris\\Sales1.csv')
+df = pd.read_csv('Sales1.csv')
 
 # Remove rows with a volume of 0
 df = df[df['Volume'] != 0]
