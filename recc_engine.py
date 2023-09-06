@@ -59,7 +59,7 @@ transactions = filtered_data.groupby(['Account_Number', 'Invoice_Date'])['Proces
 
 
 # Apply Apriori algorithm
-min_support = 0.1  # Set your desired minimum support value
+min_support = 0.01  # Set your desired minimum support value
 min_confidence = 0.5  # Set your desired minimum confidence value
 rules = apriori(transactions.to_list(), min_support=min_support, min_confidence=min_confidence, min_lift=2)
 results = list(rules)
